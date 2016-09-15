@@ -20,10 +20,13 @@
             <span class="icon-bar"></span>
           </button>
         <a class="navbar-brand" href="<%= root_url %>"/>Home</a>
+
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-           <!--  nav here -->
+            <li><%= link_to "Sign in", signin_path %>
+            <li><%= link_to "Sign up", new_user_path %>
+            <li><%= link_to "Log Out", logout_path %>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -31,6 +34,7 @@
 
     <!-- content -->
     <div class="container"  role="main">
+
       <%= yield %>
     </div>
 
